@@ -1,0 +1,14 @@
+@import "_variables";
+
+.bloco {
+    width: 80vw;
+    height: 50px;
+    border: 1px solid;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bloco__title {
+        text-transform: uppercase;
+    }
+}

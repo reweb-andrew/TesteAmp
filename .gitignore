@@ -1,0 +1,4 @@
+node_modules/
+yarn.lock
+/nbproject/
+/themes/template-*/assets/css/main.css

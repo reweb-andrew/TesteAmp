@@ -1,0 +1,28 @@
+
+  <!--include do json-->
+{% set output = source('source/output/index.json') | json_decode %}
+  <!--variavel para a parte de textos-->
+{% set texts = output.texts %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Amp</title>
+    
+    <!--include do css-->
+    <style amp-custom>
+        {% include 'assets/css/main.css' %}
+      </style>
+
+</head>
+<body>
+    <!--exemplo de variavel-->
+    <section class="bloco">
+        <h2 class="bloco__title">{{texts.title}}</h2>
+    </section>
+
+</body>
+</html>
